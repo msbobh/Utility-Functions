@@ -1,0 +1,12 @@
+
+bin/Release/*.*
+obj/Release/*.*
+.vs/DeepBe/v16/*.suo
+bin/Debug/*.sav
+bin/Debug/DeepBeliefModel.sav
+bin/Debug/UtilityFuncs.dll
+bin/Debug/UtilityFuncs.pdb
+obj/Debug/UtilityFuncs.csproj.FileListAbsolute.txt
+obj/Debug/UtilityFuncs.dll
+obj/Debug/UtilityFuncs.pdb
+obj/Debug/UtilityFuncs.csprojAssemblyReference.cache
