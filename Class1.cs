@@ -26,6 +26,25 @@ namespace UtilityFuncs
             return intPredicted;
         }
 
+        static public int[] Predict(in double[][] input, Accord.Neuro.Networks.DeepBeliefNetwork network)
+        {
+            double[][] predicted = new double[input.Length][];
+
+            for (int i = 0; i <= input.Length - 1; i++)
+            {
+                predicted[i] = network.Compute(input[i]);
+            }
+            int[] intPredicted = new int[predicted.Length];
+            for (int i = 0; i <= predicted.Length - 1; i++)
+            {
+                if (predicted[i][0] < 0.5)
+                    intPredicted[i] = 0;
+                else
+                    intPredicted[i] = 1;
+            }
+            return intPredicted;
+        }
+
         /*
          * Routines for processing data files
          * 
@@ -150,7 +169,7 @@ namespace UtilityFuncs
             if (!addpercent)
                 Console.WriteLine(value);
             else
-                Console.Write("{0}%", value);
+                Console.WriteLine("{0}%", value);
             Console.ForegroundColor = originalColor;
         }
         static public void Printcolor(double value, ConsoleColor color, bool addpercent)
@@ -160,7 +179,15 @@ namespace UtilityFuncs
             if (!addpercent)
                 Console.WriteLine(value);
             else
-                Console.Write("{0}%", value);
+                Console.WriteLine("{0}%", value);
+            Console.ForegroundColor = originalColor;
+        }
+
+        static public void Printcolor(string value, ConsoleColor color)
+        {
+            ConsoleColor originalColor = Console.ForegroundColor;
+            Console.ForegroundColor = color;
+            Console.WriteLine(value);
             Console.ForegroundColor = originalColor;
         }
     }
