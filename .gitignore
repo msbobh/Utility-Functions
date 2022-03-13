@@ -1,7 +1,7 @@
 
 bin/Release/*.*
 obj/Release/*.*
-.vs/DeepBe/v16/*.suo
+.vs/UtilityFuncs/v16/*.suo
 bin/Debug/*.sav
 bin/Debug/DeepBeliefModel.sav
 bin/Debug/UtilityFuncs.dll
@@ -14,3 +14,9 @@ obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
 obj/Debug/UtilityFuncs.csproj.CoreCompileInputs.cache
 obj/Debug/build.force
+bin/Debug/ICSharpCode.SharpZipLib.dll
+obj/Debug/UtilityFuncs.csproj.FileListAbsolute.txt
+bin/Debug/ICSharpCode.SharpZipLib.pdb
+bin/Debug/ICSharpCode.SharpZipLib.xml
+obj/Debug/.AssemblyReference.cache
+obj/Debug/UtilityFuncs.csproj.AssemblyReference.cache
